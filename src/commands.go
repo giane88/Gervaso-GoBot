@@ -25,3 +25,14 @@ func buildProgram() string {
 	log.Print("build complete")
 	return "Build completata con successo" + string(output)
 }
+
+func reboot() string {
+	log.Print("Rebooting")
+	output, err := exec.Command("sh", "../scripts/runbot.sh").CombinedOutput()
+
+	if err != nil {
+		os.Stderr.WriteString(err.Error())
+	}
+	log.Print("boot complete")
+	return "Reboot" + string(output)
+}
