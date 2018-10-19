@@ -36,7 +36,7 @@ func update(m *tb.Message) {
 		bot.Send(m.Sender, response)
 		response = reboot()
 		bot.Send(m.Sender, response)
-		panic(nil)
+		os.Exit(0)
 	} else {
 		bot.Send(m.Sender, "Mi spiace "+m.Sender.Username+" non sei autorizzato")
 	}
