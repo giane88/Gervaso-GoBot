@@ -20,5 +20,5 @@ func buildProgram() string {
 	if err != nil {
 		os.Stderr.WriteString(err.Error())
 	}
-	return string(output)
+	return "Build completata con successo" + string(output)
 }
