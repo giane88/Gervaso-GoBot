@@ -10,4 +10,6 @@
 
 # Output of the go coverage tool, specifically when used with LiteIDE
 *.out
-scripts/runbot.bat
+scripts/runbot*
+scripts/buildscript.bat
+gervasobot
