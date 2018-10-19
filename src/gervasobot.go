@@ -33,6 +33,7 @@ func update(m *tb.Message) {
 		response := execPullCommand()
 		bot.Send(m.Sender, response)
 		response = buildProgram()
+		bot.Send(m.Sender, response)
 	} else {
 		bot.Send(m.Sender, "Mi spiace "+m.Sender.Username+" non sei autorizzato")
 	}
